@@ -14,7 +14,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         System.setProperty("webdriver.chrome.driver", "/Applications/IntelliJ IDEA CE.app/Contents/Resources/Chromedrivers/chromedriver");
-//hecnfv kj[
+
         /*
         ChromeDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
@@ -104,15 +104,7 @@ public class Main {
                     if (present) {
                         break;
                     }
-
-
-
                 }
-
-
-
-
-
             }
 
             List<String> change_tabs = new ArrayList<>(driver.getWindowHandles());
@@ -120,7 +112,7 @@ public class Main {
             WebElement raiting = driver.findElement(By.xpath("//span[@class='_2v4E8']"));
             String answer = raiting.getAttribute("innerText");
             System.out.println(answer);
-            System.out.println("Печать");
+
         }
         catch(InterruptedException e){
             e.printStackTrace();
